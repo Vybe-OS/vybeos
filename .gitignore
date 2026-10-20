@@ -1,0 +1,8 @@
+# Temporary folder while mkarchiso is working
+work/
+
+# Output .iso build folder
+out/
+
+# Log/cache build
+*.log
