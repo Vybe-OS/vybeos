@@ -1,0 +1,10 @@
+[terminal]
+vt = 1
+
+[initial_session]
+command = "sway"
+user = "vybe"
+
+[default_session]
+command = "tuigreet --cmd sway"
+user = "greeter"
