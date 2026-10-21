@@ -94,6 +94,7 @@ zsh
 
 # Custom
 base-devel
+brightnessctl
 docker
 docker-compose
 foot
@@ -102,6 +103,7 @@ git
 greetd
 greetd-tuigreet
 greetd-gtkgreet
+grim
 mesa
 networkmanager
 noto-fonts
@@ -110,12 +112,14 @@ pipewire
 pipewire-pulse
 polkit
 sway
+slurp
 ttf-jetbrains-mono-nerd
 unzip
 vulkan-intel
 vulkan-radeon
 waybar
 wireplumber
+wl-clipboard
 wmenu
 xdg-desktop-portal-wlr
 xorg-xwayland
