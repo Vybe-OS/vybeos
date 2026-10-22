@@ -1,7 +1,67 @@
+
 {
+  // VybeOS - Neon Horizon
+  // Minimal Futuristic Waybar
+
   "layer": "top",
-  "height": 30,
-  "modules-left": ["sway/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "battery", "tray"]
+  "position": "top",
+  "height": 38,
+  "spacing": 8,
+
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+
+  // Susunan modul
+  "modules-left": [
+    "custom/logo"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "network",
+    "battery",
+    "custom/power"
+  ],
+
+  // Logo VybeOS
+  "custom/logo": {
+    "format": "vOs",
+    "tooltip": false
+  },
+
+  // Jam tengah
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  // Jaringan
+  "network": {
+    "format-wifi": "WiFi {signalStrength}%",
+    "format-ethernet": "LAN",
+    "format-disconnected": "Offline",
+    "tooltip-format-wifi": "{essid}"
+  },
+
+  // Baterai
+  "battery": {
+    "format": "BAT {capacity}%",
+    "format-charging": "BAT {capacity}% +",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  // Tombol power
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": true,
+    "tooltip-format": "Menu Daya VybeOS",
+    "on-click": "swaynag -t warning -m 'Menu Daya VybeOS' -B 'Matikan' 'systemctl poweroff' -B 'Restart' 'systemctl reboot' -B 'Keluar' 'swaymsg exit'"
+  }
 }
