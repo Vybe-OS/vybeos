@@ -3,11 +3,31 @@ set $mod Mod4
 set $term foot
 set $menu wmenu-run
 
-### Tampilan
-output * bg #1e1e2e solid_color
+
+### Tampilan - VybeOS Neon Horizon
+
+# Background desktop
+output * bg #090e1d solid_color
+
+# Border jendela
 default_border pixel 2
-gaps inner 6
-client.focused #89b4fa #1e1e2e #cdd6f4 #89b4fa #89b4fa
+default_floating_border pixel 2
+
+# Jarak antarlayar dan jendela
+gaps inner 10
+gaps outer 8
+
+# Jendela aktif - Cyber Cyan
+client.focused #43d7ff #101a30 #dde7ff #b26cff #43d7ff
+
+# Jendela yang sebelumnya aktif
+client.focused_inactive #36456f #101a30 #a8b4d4 #36456f #36456f
+
+# Jendela tidak aktif
+client.unfocused #28334f #0c1326 #8997bc #28334f #28334f
+
+# Jendela yang membutuhkan perhatian
+client.urgent #f472d0 #321b37 #ffffff #f472d0 #f472d0
 
 ### Input
 input type:touchpad {

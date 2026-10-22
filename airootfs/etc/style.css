@@ -1,34 +1,102 @@
+
+/* ==================================
+   VybeOS - Neon Horizon
+   Futuristic Minimalist Waybar
+   ================================== */
+
+/* Pengaturan utama */
 * {
-  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
-  font-size: 13px;
-  border: none;
-  border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font",
+                 "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
 }
 
+/* Background Waybar */
 window#waybar {
-  background: #1e1e2e;
-  color: #cdd6f4;
+    background: transparent;
+    color: #dde7ff;
 }
 
-#workspaces button {
-  padding: 0 10px;
-  color: #6c7086;
-  background: transparent;
+/* Tampilan dasar semua modul */
+#custom-logo,
+#clock,
+#network,
+#battery,
+#custom-power {
+    background: #101a30;
+    color: #dde7ff;
+    padding: 0 13px;
+    margin: 3px 0;
+    border: 1px solid #283b58;
+    border-radius: 11px;
 }
 
-#workspaces button.focused {
-  color: #cdd6f4;
-  background: #45475a;
+/* Logo VybeOS */
+#custom-logo {
+    color: #43d7ff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 16px;
+    border-color: #43d7ff;
+    text-shadow: 0 0 7px rgba(67, 215, 255, 0.5);
 }
 
-#clock, #pulseaudio, #network, #battery, #tray {
-  padding: 0 10px;
+/* Jam di tengah */
+#clock {
+    color: #dde7ff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    border-color: #b26cff;
+    box-shadow: 0 0 7px rgba(178, 108, 255, 0.2);
+}
+
+/* Indikator WiFi */
+#network {
+    color: #43d7ff;
+}
+
+#network.disconnected {
+    color: #f472d0;
+    border-color: #f472d0;
+}
+
+/* Indikator baterai */
+#battery {
+    color: #dde7ff;
+}
+
+#battery.charging {
+    color: #62f5bd;
 }
 
 #battery.warning {
-  color: #f9e2af;
+    color: #ffcb6b;
 }
 
 #battery.critical {
-  color: #f38ba8;
+    color: #ff6b91;
+    border-color: #ff6b91;
+}
+
+/* Tombol power */
+#custom-power {
+    color: #f472d0;
+    background: #28162f;
+    border-color: #f472d0;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 13px;
+    box-shadow: 0 0 8px rgba(244, 114, 208, 0.2);
+}
+
+/* Efek hover tombol power */
+#custom-power:hover {
+    background: #3b203e;
+    color: #ff9ee4;
+    box-shadow: 0 0 12px rgba(244, 114, 208, 0.45);
 }
