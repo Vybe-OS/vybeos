@@ -3,11 +3,10 @@ set $mod Mod4
 set $term foot
 set $menu wmenu-run
 
-
 ### Tampilan - VybeOS Neon Horizon
 
 # Background desktop
-output * bg #090e1d solid_color
+output * bg /usr/share/backgrounds/vybeos/wallpaper.png fill
 
 # Border jendela
 default_border pixel 2
