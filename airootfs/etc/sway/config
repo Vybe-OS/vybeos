@@ -6,7 +6,7 @@ set $menu wmenu-run
 ### Tampilan - VybeOS Neon Horizon
 
 # Background desktop
-output * bg /usr/share/backgrounds/vybeos/wallpaper.png fill
+output * bg /usr/share/backgrounds/vybeos/wallpaper.jpeg fill
 
 # Border jendela
 default_border pixel 2
