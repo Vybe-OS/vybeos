@@ -1,8 +1,5 @@
 
 {
-  // VybeOS - Neon Horizon
-  // Minimal Futuristic Waybar
-
   "layer": "top",
   "position": "top",
   "height": 38,
@@ -12,7 +9,6 @@
   "margin-left": 10,
   "margin-right": 10,
 
-  // Susunan modul
   "modules-left": [
     "custom/logo"
   ],
@@ -27,19 +23,16 @@
     "custom/power"
   ],
 
-  // Logo VybeOS
   "custom/logo": {
     "format": "vOs",
     "tooltip": false
   },
 
-  // Jam tengah
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": "{:%A, %d %B %Y}"
   },
 
-  // Jaringan
   "network": {
     "format-wifi": "WiFi {signalStrength}%",
     "format-ethernet": "LAN",
@@ -47,7 +40,6 @@
     "tooltip-format-wifi": "{essid}"
   },
 
-  // Baterai
   "battery": {
     "format": "BAT {capacity}%",
     "format-charging": "BAT {capacity}% +",
@@ -57,11 +49,10 @@
     }
   },
 
-  // Tombol power
   "custom/power": {
     "format": "⏻",
     "tooltip": true,
-    "tooltip-format": "Menu Daya VybeOS",
-    "on-click": "swaynag -t warning -m 'Menu Daya VybeOS' -B 'Matikan' 'systemctl poweroff' -B 'Restart' 'systemctl reboot' -B 'Keluar' 'swaymsg exit'"
+    "tooltip-format": "Opsi Daya",
+    "on-click": "sh -c 'if pgrep -x swaynag >/dev/null; then pkill -x swaynag; else swaynag -t warning -e bottom -y overlay --background 101a30 --text dde7ff --border b26cff --button-background 192743 --button-text dde7ff -m \"Opsi Daya\" -Z \"Keluar\" \"swaymsg exit\" -Z \"Mulai Ulang\" \"systemctl reboot\" -Z \"Matikan\" \"systemctl poweroff\" & fi'"
   }
 }
