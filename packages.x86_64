@@ -73,8 +73,9 @@ opencode
 pipewire
 pipewire-pulse
 polkit
-sway
 slurp
+sway
+swaybg
 ttf-jetbrains-mono-nerd
 unzip
 vulkan-intel
