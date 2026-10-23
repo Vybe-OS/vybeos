@@ -76,6 +76,7 @@ polkit
 slurp
 sway
 swaybg
+swaylock
 ttf-jetbrains-mono-nerd
 unzip
 vulkan-intel
@@ -83,6 +84,7 @@ vulkan-radeon
 waybar
 wireplumber
 wl-clipboard
+wlogout
 wmenu
 xdg-desktop-portal-wlr
 xorg-xwayland
