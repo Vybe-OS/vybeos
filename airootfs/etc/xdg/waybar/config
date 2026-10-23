@@ -9,7 +9,8 @@
   "margin-right": 10,
 
   "modules-left": [
-    "custom/logo"
+    "cpu",
+    "memory"
   ],
 
   "modules-center": [
@@ -17,17 +18,10 @@
   ],
 
   "modules-right": [
-    "cpu",
-    "memory",
-    "battery",
     "network",
+    "battery",
     "custom/power"
   ],
-
-  "custom/logo": {
-    "format": "vOs",
-    "tooltip": false
-  },
 
   "clock": {
     "format": "{:%H:%M}",
@@ -67,6 +61,6 @@
     "format": "⏻",
     "tooltip": true,
     "tooltip-format": "Opsi Daya",
-    "on-click": "sh -c 'if pgrep -x swaynag >/dev/null; then pkill -x swaynag; else swaynag -t warning -e bottom -y overlay --background 101a30 --text dde7ff --border b26cff --button-background 192743 --button-text dde7ff -m \"Opsi Daya\" -Z \"Keluar\" \"swaymsg exit\" -Z \"Mulai Ulang\" \"systemctl reboot\" -Z \"Matikan\" \"systemctl poweroff\" & fi'"
+    "on-click": "sh -c 'if pgrep -x swaynag >/dev/null; then pkill -x swaynag; else swaynag -t warning -e top -y overlay --background 101a30 --text dde7ff --border b26cff --button-background 192743 --button-text dde7ff -m \"Opsi Daya\" -Z \"Keluar\" \"swaymsg exit\" -Z \"Mulai Ulang\" \"systemctl reboot\" -Z \"Matikan\" \"systemctl poweroff\" & fi'"
   }
 }
