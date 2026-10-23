@@ -57,10 +57,12 @@
     }
   },
 
+  
   "custom/power": {
-    "format": "⏻",
-    "tooltip": true,
-    "tooltip-format": "Opsi Daya",
-    "on-click": "sh -c 'if pgrep -x swaynag >/dev/null; then pkill -x swaynag; else swaynag -t warning -e top -y overlay --background 101a30 --text dde7ff --border b26cff --button-background 192743 --button-text dde7ff -m \"Opsi Daya\" -Z \"Keluar\" \"swaymsg exit\" -Z \"Mulai Ulang\" \"systemctl reboot\" -Z \"Matikan\" \"systemctl poweroff\" & fi'"
+      "format": "",
+      "tooltip": true,
+      "tooltip-format": "Power Menu",
+      "on-click": "wlogout -p layer-shell"
   }
+
 }
