@@ -1,10 +1,5 @@
+/* VybeOS - Neon Horizon */
 
-/* ==================================
-   VybeOS - Neon Horizon
-   Futuristic Minimalist Waybar
-   ================================== */
-
-/* Pengaturan utama */
 * {
     font-family: "JetBrainsMono Nerd Font",
                  "Noto Sans", sans-serif;
@@ -15,15 +10,16 @@
     min-height: 0;
 }
 
-/* Background Waybar */
 window#waybar {
     background: transparent;
     color: #dde7ff;
 }
 
-/* Tampilan dasar semua modul */
+/* Tampilan modul */
 #custom-logo,
 #clock,
+#cpu,
+#memory,
 #network,
 #battery,
 #custom-power {
@@ -35,7 +31,7 @@ window#waybar {
     border-radius: 11px;
 }
 
-/* Logo VybeOS */
+/* Logo */
 #custom-logo {
     color: #43d7ff;
     font-size: 15px;
@@ -45,7 +41,7 @@ window#waybar {
     text-shadow: 0 0 7px rgba(67, 215, 255, 0.5);
 }
 
-/* Jam di tengah */
+/* Jam */
 #clock {
     color: #dde7ff;
     font-size: 14px;
@@ -55,7 +51,27 @@ window#waybar {
     box-shadow: 0 0 7px rgba(178, 108, 255, 0.2);
 }
 
-/* Indikator WiFi */
+/* CPU */
+#cpu {
+    color: #43d7ff;
+}
+
+#cpu:hover {
+    border-color: #43d7ff;
+    background: #162640;
+}
+
+/* RAM */
+#memory {
+    color: #b26cff;
+}
+
+#memory:hover {
+    border-color: #b26cff;
+    background: #221a3b;
+}
+
+/* Jaringan */
 #network {
     color: #43d7ff;
 }
@@ -65,7 +81,7 @@ window#waybar {
     border-color: #f472d0;
 }
 
-/* Indikator baterai */
+/* Baterai */
 #battery {
     color: #dde7ff;
 }
@@ -94,7 +110,6 @@ window#waybar {
     box-shadow: 0 0 8px rgba(244, 114, 208, 0.2);
 }
 
-/* Efek hover tombol power */
 #custom-power:hover {
     background: #3b203e;
     color: #ff9ee4;

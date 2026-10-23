@@ -1,4 +1,3 @@
-
 {
   "layer": "top",
   "position": "top",
@@ -18,6 +17,8 @@
   ],
 
   "modules-right": [
+    "cpu",
+    "memory",
     "battery",
     "network",
     "custom/power"
@@ -31,6 +32,19 @@
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%",
+    "interval": 5,
+    "tooltip": true
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%",
+    "interval": 5,
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f} GiB / {total:0.1f} GiB"
   },
 
   "network": {
