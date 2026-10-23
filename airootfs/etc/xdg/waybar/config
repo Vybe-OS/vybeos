@@ -10,7 +10,9 @@
   "margin-right": 10,
 
   "modules-left": [
-    "custom/logo"
+    "custom/logo",
+    "cpu",
+    "memory"
   ],
 
   "modules-center": [
@@ -18,8 +20,12 @@
   ],
 
   "modules-right": [
+<<<<<<< Updated upstream
     "battery",
+=======
+>>>>>>> Stashed changes
     "network",
+    "battery",
     "custom/power"
   ],
 

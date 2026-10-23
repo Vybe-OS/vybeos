@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+
+/* VybeOS - Neon Horizon */
+>>>>>>> Stashed changes
 
 /* ==================================
    VybeOS - Neon Horizon
@@ -15,7 +20,11 @@
     min-height: 0;
 }
 
+<<<<<<< Updated upstream
 /* Background Waybar */
+=======
+/* Waybar */
+>>>>>>> Stashed changes
 window#waybar {
     background: transparent;
     color: #dde7ff;
@@ -29,10 +38,10 @@ window#waybar {
 #custom-power {
     background: #101a30;
     color: #dde7ff;
-    padding: 0 13px;
-    margin: 3px 0;
+    padding: 0 14px;
+    margin: 4px 2px;
     border: 1px solid #283b58;
-    border-radius: 11px;
+    border-radius: 999px;
 }
 
 /* Logo VybeOS */
@@ -40,7 +49,7 @@ window#waybar {
     color: #43d7ff;
     font-size: 15px;
     font-weight: bold;
-    padding: 0 16px;
+    padding: 0 18px;
     border-color: #43d7ff;
     text-shadow: 0 0 7px rgba(67, 215, 255, 0.5);
 }
@@ -50,12 +59,38 @@ window#waybar {
     color: #dde7ff;
     font-size: 14px;
     font-weight: bold;
-    padding: 0 20px;
+    padding: 0 22px;
     border-color: #b26cff;
     box-shadow: 0 0 7px rgba(178, 108, 255, 0.2);
 }
 
+<<<<<<< Updated upstream
 /* Indikator WiFi */
+=======
+/* CPU */
+#cpu {
+    color: #43d7ff;
+    border-color: #283b58;
+}
+
+#cpu:hover {
+    background: #162640;
+    border-color: #43d7ff;
+}
+
+/* RAM */
+#memory {
+    color: #b26cff;
+    border-color: #283b58;
+}
+
+#memory:hover {
+    background: #221a3b;
+    border-color: #b26cff;
+}
+
+/* Jaringan */
+>>>>>>> Stashed changes
 #network {
     color: #43d7ff;
 }
@@ -90,7 +125,7 @@ window#waybar {
     border-color: #f472d0;
     font-size: 18px;
     font-weight: bold;
-    padding: 0 13px;
+    padding: 0 15px;
     box-shadow: 0 0 8px rgba(244, 114, 208, 0.2);
 }
 
