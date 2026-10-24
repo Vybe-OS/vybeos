@@ -1,0 +1,7 @@
+{
+  "logo": {
+    "source": "/etc/xdg/fastfetch/vybeos.txt",
+    "type": "file-raw",
+    "padding": { "top": 1, "left": 2, "right": 3 }
+  }
+}
