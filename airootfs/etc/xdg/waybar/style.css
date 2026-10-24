@@ -53,6 +53,8 @@ window#waybar {
 #cpu:hover {
     background: #162640;
     border-color: #43d7ff;
+}
+
 /* CPU */
 #cpu {
     color: #43d7ff;
@@ -72,9 +74,6 @@ window#waybar {
 #memory:hover {
     background: #221a3b;
     border-color: #b26cff;
-}
-
-/* Jaringan */
 }
 
 #memory:hover {
