@@ -11,7 +11,7 @@ Basic installation step
 
 ## Support & Community
 ### Get Help
-Official Websites: [vybeos.org](https://vybeos.org)
+Official Websites: [vybeos.dev](https://vybeos.dev)
 
 ### Contributors
 Special thanks to our contributors.

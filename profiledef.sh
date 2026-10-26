@@ -3,7 +3,7 @@
 
 iso_name="vybeos"
 iso_label="VYBEOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="VybeOS <https://archlinux.org>"
+iso_publisher="VybeOS <https://vybeos.dev>"
 iso_application="VybeOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
