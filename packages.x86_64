@@ -3,7 +3,6 @@ amd-ucode
 arch-install-scripts
 archinstall
 base
-bolt
 btrfs-progs
 cryptsetup
 diffutils
@@ -17,7 +16,6 @@ exfatprogs
 foot-terminfo
 gptfdisk
 grub
-hyperv
 intel-ucode
 iw
 iwd
@@ -29,19 +27,15 @@ linux-firmware-marvell
 lvm2
 man-db
 man-pages
-memtest86+
-memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mtools
 nano
 ntfsprogs
-open-vm-tools
 openssh
 parted
 pv
 qemu-guest-agent
-refind
 reflector
 rsync
 sof-firmware
@@ -79,7 +73,6 @@ sway
 swaybg
 swaylock
 ttf-jetbrains-mono-nerd
-unzip
 vulkan-intel
 vulkan-radeon
 vybeos-keyring
@@ -90,4 +83,3 @@ wlogout
 wmenu
 xdg-desktop-portal-wlr
 xorg-xwayland
-zip
