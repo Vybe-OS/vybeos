@@ -1,47 +1,61 @@
 
+/* VybeOS - Arctic Blue wlogout */
+
+/* Reset tampilan */
 * {
     background-image: none;
     box-shadow: none;
     text-shadow: none;
 }
 
+/* Background utama */
 window {
-    background-color: rgba(5, 15, 18, 0.88);
-    font-family: "Font Awesome 6 Free", sans-serif;
+    background-color: rgba(238, 247, 252, 0.94);
+    font-family: "Font Awesome 6 Free", "Noto Sans", sans-serif;
 }
 
+/* Tombol utama */
 button {
-    color: #ffffff;
-    background-color: rgba(20, 45, 48, 0.92);
+    color: #14396D;
+    background-color: rgba(255, 255, 255, 0.96);
     background-repeat: no-repeat;
     background-position: center 35%;
     background-size: 64px;
-    border: 2px solid rgba(112, 245, 208, 0.25);
+
+    border: 2px solid #A8D8FC;
     border-radius: 24px;
     margin: 12px;
     outline: none;
+
+    transition: background-color 180ms ease,
+                border-color 180ms ease;
 }
 
+/* Hover dan fokus */
 button:hover,
 button:focus {
-    color: #ffffff;
-    background-color: rgba(35, 110, 100, 0.96);
-    border: 2px solid #70f5d0;
+    color: #14396D;
+    background-color: #DCEFFD;
+    border: 2px solid #3061D3;
     background-size: 76px;
 }
 
+/* Lock */
 #lock {
     background-image: image(url("/usr/share/wlogout/icons/lock.png"));
 }
 
+/* Shutdown */
 #shutdown {
     background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
 }
 
+/* Reboot */
 #reboot {
     background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
 }
 
+/* Logout */
 #logout {
     background-image: image(url("/usr/share/wlogout/icons/logout.png"));
 }

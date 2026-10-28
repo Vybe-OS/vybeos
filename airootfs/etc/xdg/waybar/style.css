@@ -1,4 +1,7 @@
-/* VybeOS - Neon Horizon */
+
+/* VybeOS - Arctic Blue */
+
+/* Font dan aturan dasar */
 * {
     font-family: "JetBrainsMono Nerd Font",
                  "Noto Sans", sans-serif;
@@ -9,15 +12,13 @@
     min-height: 0;
 }
 
-
 /* Background Waybar */
-/* Waybar */
 window#waybar {
     background: transparent;
-    color: #dde7ff;
+    color: #14396D;
 }
 
-/* Tampilan modul */
+/* Kapsul utama semua modul */
 #custom-logo,
 #clock,
 #cpu,
@@ -25,103 +26,96 @@ window#waybar {
 #network,
 #battery,
 #custom-power {
-    background: #101a30;
-    color: #dde7ff;
+    background: rgba(255, 255, 255, 0.94);
+    color: #14396D;
     padding: 0 14px;
     margin: 4px 2px;
-    border: 1px solid #283b58;
+    border: 1px solid #A8D8FC;
     border-radius: 999px;
 }
 
-/* Jam */
+/* Logo VybeOS */
+#custom-logo {
+    color: #3061D3;
+    font-weight: bold;
+    padding: 0 16px;
+}
+
+/* Jam di tengah */
 #clock {
-    color: #dde7ff;
+    background: #FFFFFF;
+    color: #14396D;
     font-size: 14px;
     font-weight: bold;
     padding: 0 22px;
-    border-color: #b26cff;
-    box-shadow: 0 0 7px rgba(178, 108, 255, 0.2);
-}
-
-/* Indikator WiFi */
-/* CPU */
-#cpu {
-    color: #43d7ff;
-    border-color: #283b58;
-}
-
-#cpu:hover {
-    background: #162640;
-    border-color: #43d7ff;
+    border-color: #669BF1;
 }
 
 /* CPU */
 #cpu {
-    color: #43d7ff;
+    color: #3061D3;
 }
 
 #cpu:hover {
-    border-color: #43d7ff;
-    background: #162640;
+    background: #DCEFFD;
+    border-color: #3061D3;
 }
 
 /* RAM */
 #memory {
-    color: #b26cff;
-    border-color: #283b58;
+    color: #3061D3;
 }
 
 #memory:hover {
-    background: #221a3b;
-    border-color: #b26cff;
-}
-
-#memory:hover {
-    border-color: #b26cff;
-    background: #221a3b;
+    background: #DCEFFD;
+    border-color: #669BF1;
 }
 
 /* Jaringan */
 #network {
-    color: #43d7ff;
+    color: #14396D;
+}
+
+#network:hover {
+    background: #DCEFFD;
+    border-color: #669BF1;
 }
 
 #network.disconnected {
-    color: #f472d0;
-    border-color: #f472d0;
+    color: #C62828;
+    border-color: #C62828;
 }
 
 /* Baterai */
 #battery {
-    color: #dde7ff;
+    color: #14396D;
 }
 
 #battery.charging {
-    color: #62f5bd;
+    color: #218653;
 }
 
 #battery.warning {
-    color: #ffcb6b;
+    color: #B77900;
 }
 
 #battery.critical {
-    color: #ff6b91;
-    border-color: #ff6b91;
+    color: #C62828;
+    border-color: #C62828;
 }
 
-/* Tombol power */
+/* Tombol Power */
 #custom-power {
-    color: #f472d0;
-    background: #28162f;
-    border-color: #f472d0;
+    background: #3061D3;
+    color: #FFFFFF;
+    border-color: #3061D3;
     font-size: 18px;
     font-weight: bold;
     padding: 0 15px;
-    box-shadow: 0 0 8px rgba(244, 114, 208, 0.2);
 }
 
 #custom-power:hover {
-    background: #3b203e;
-    color: #ff9ee4;
-    box-shadow: 0 0 12px rgba(244, 114, 208, 0.45);
+    background: #669BF1;
+    color: #FFFFFF;
+    border-color: #669BF1;
 }
