@@ -3,8 +3,6 @@ set $mod Mod4
 set $term foot
 set $menu wmenu-run
 
-### Tampilan - VybeOS Neon Horizon
-
 # Background desktop
 output * bg /usr/share/backgrounds/vybeos/wallpaper-2.png fill
 
@@ -13,8 +11,8 @@ default_border pixel 2
 default_floating_border pixel 2
 
 # Jarak antarlayar dan jendela
-gaps inner 10
-gaps outer 8
+gaps inner 4
+gaps outer 4
 
 # Jendela aktif - Cyber Cyan
 client.focused #43d7ff #101a30 #dde7ff #b26cff #43d7ff
@@ -42,11 +40,10 @@ input type:keyboard {
 exec_always wl-paste --watch true
 
 ### Dasar
-bindsym $mod+Return exec $term
+bindsym $mod+t exec $term
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
-bindsym $mod+Shift+e exec swaynag -t warning -m 'Keluar dari sway?' -B 'Ya' 'swaymsg exit'
 floating_modifier $mod normal
 
 ### Fokus dan pindah window
