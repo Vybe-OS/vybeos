@@ -17,6 +17,7 @@ button {
     background-position: center;
     background-size: 48px;
 
+    border: 2px solid #FFFFFF;
     border-radius: 16px;
     margin: 10px;
     outline: none;
@@ -25,8 +26,7 @@ button {
                 border-color 180ms ease-in-out,
                 background-size 180ms ease-in-out;
 
-    min-width: 150px;
-    min-height: 150px;
+    max-height: fit-content;
 }
 
 /* Hover dan fokus */
