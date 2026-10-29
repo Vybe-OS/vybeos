@@ -26,6 +26,7 @@ button {
 
     min-width: 150px;
     min-height: 150px;
+    box-sizing: border-box;
 }
 
 /* Hover dan fokus */
