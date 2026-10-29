@@ -19,7 +19,7 @@ button {
     color: #14396D;
     background-color: rgba(255, 255, 255, 0.96);
     background-repeat: no-repeat;
-    background-position: center 45%;
+    background-position: center 40%;
     background-size: 48px;
 
     border: 2px solid #FFFFFF;
@@ -39,7 +39,7 @@ button:hover,
 button:focus {
     color: #14396D;
     background-color: #DCEFFD;
-    border: 2px solid #3061D3;
+    border: 2px solid #769aec;
     background-size: 52px;
 }
 
