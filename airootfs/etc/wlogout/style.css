@@ -26,7 +26,7 @@ button {
                 border-color 180ms ease-in-out,
                 background-size 180ms ease-in-out;
 
-    height: fit-content;
+    min-height: fit-content;
 }
 
 /* Hover dan fokus */
