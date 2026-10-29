@@ -25,8 +25,6 @@ button {
     transition: background-color 180ms ease-in-out,
                 border-color 180ms ease-in-out,
                 background-size 180ms ease-in-out;
-
-    min-height: fit-content;
 }
 
 /* Hover dan fokus */
