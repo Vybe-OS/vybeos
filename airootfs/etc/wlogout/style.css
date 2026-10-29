@@ -21,12 +21,12 @@ button {
     margin: 10px;
     outline: none;
 
-    transition: background-color 180ms ease,
-                border-color 180ms ease;
+    transition: background-color 180ms ease-in-out,
+                border-color 180ms ease-in-out,
+                background-size 180ms ease-in-out;
 
     min-width: 150px;
     min-height: 150px;
-    box-sizing: border-box;
 }
 
 /* Hover dan fokus */
@@ -35,7 +35,7 @@ button:focus {
     color: #14396D;
     background-color: #DCEFFD;
     border: 2px solid #3061D3;
-    background-size: 56px;
+    background-size: 52px;
 }
 
 /* Lock */
