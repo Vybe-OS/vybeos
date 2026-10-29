@@ -1,29 +1,23 @@
-
 /* VybeOS - Arctic Blue wlogout */
-
-/* Reset tampilan */
 * {
     background-image: none;
     box-shadow: none;
     text-shadow: none;
 }
 
-/* Background utama */
 window {
-    background-color: rgba(238, 247, 252, 0.94);
+    background-color: rgba(238, 247, 252, 0.4);
     font-family: "Font Awesome 6 Free", "Noto Sans", sans-serif;
 }
 
-/* Tombol utama */
 button {
     color: #14396D;
     background-color: rgba(255, 255, 255, 0.96);
     background-repeat: no-repeat;
     background-position: center 35%;
-    background-size: 64px;
+    background-size: 48px;
 
-    border: 2px solid #A8D8FC;
-    border-radius: 24px;
+    border-radius: 16px;
     margin: 12px;
     outline: none;
 
@@ -37,7 +31,7 @@ button:focus {
     color: #14396D;
     background-color: #DCEFFD;
     border: 2px solid #3061D3;
-    background-size: 76px;
+    background-size: 56px;
 }
 
 /* Lock */
