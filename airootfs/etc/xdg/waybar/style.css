@@ -26,6 +26,10 @@ window#waybar {
     font-size: 12px;
 }
 
+#custom-power {
+    font-size: 14px;
+}
+
 #cpu:hover {
     background: #ecf6fd;
 }
