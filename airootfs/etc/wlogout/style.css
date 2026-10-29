@@ -11,7 +11,8 @@ window {
 }
 
 grid {
-    max-height: 200px;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
 }
 
 button {
