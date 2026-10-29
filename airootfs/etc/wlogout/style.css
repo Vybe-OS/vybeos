@@ -10,10 +10,6 @@ window {
     font-family: "Font Awesome 6 Free", "Noto Sans", sans-serif;
 }
 
-grid {
-    margin: 50px;
-}
-
 button {
     color: #14396D;
     background-color: rgba(255, 255, 255, 0.96);
