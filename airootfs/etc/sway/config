@@ -1,7 +1,7 @@
 ### Variabel
 set $mod Mod4
 set $term foot
-set $menu wmenu-run
+set $menu rofi -show drun -show-icons -theme /etc/xdg/rofi/arctic-blue.rasi
 
 # Background desktop
 output * bg /usr/share/backgrounds/vybeos/wallpaper-2.png fill
