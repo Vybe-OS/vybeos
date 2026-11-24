@@ -1,34 +1,23 @@
 amd-ucode
 arch-install-scripts
+archlinux-keyring
 base
 btrfs-progs
-diffutils
 dosfstools
 e2fsprogs
-edk2-shell
-grub
 intel-ucode
-less
 linux
 linux-firmware
 mkinitcpio
 mkinitcpio-archiso
-nano
-openssh
-qemu-guest-agent
+networkmanager
+polkit
 reflector
 sudo
-syslinux
 systemd-resolvconf
-terminus-font
-virtualbox-guest-utils-nox
 wireless-regdb
-xdg-utils
 zsh
 
 # Custom
-fastfetch
-networkmanager
-polkit
 vybeos-keyring
 vybeos-installer
